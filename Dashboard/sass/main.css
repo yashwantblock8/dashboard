@@ -1,0 +1,448 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFB;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.dashboard {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 102rem;
+      grid-template-rows: 102rem;
+  -ms-grid-columns: 22rem auto;
+      grid-template-columns: 22rem auto;
+  grid-gap: 2rem;
+}
+
+.dashboard .menu {
+  background-color: #FFFFFF;
+}
+
+.dashboard .menu .logo-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .menu .dashboard-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.dashboard .menu .dashboard-menu .dashboard-menu-submenu .dashboard-menu-submenu-elem {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.dashboard .menu .dashboard-menu .dashboard-menu-submenu .dashboard-menu-submenu-elem .dashboard-menu-submenu-elem-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #030229;
+  text-decoration: none;
+}
+
+.dashboard .menu .dashboard-menu-down-logo {
+  margin-top: 270px;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .dashboard-menu-down-logo-rectangle {
+  width: 168px;
+  height: 161px;
+  margin-left: 25px;
+  background: #80ABFF;
+  opacity: 0.1;
+  border-radius: 20px;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .image-object {
+  margin-top: -160px;
+  margin-left: 30px;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .image-object .image-object-rect {
+  width: 110px;
+  height: 43px;
+  margin-left: 20px;
+  margin-top: -34px;
+  background: linear-gradient(10deg, rgba(126, 170, 255, 0.29) 0%, rgba(196, 196, 196, 0) 100%);
+}
+
+.dashboard .menu .dashboard-menu-down-logo .image-object .btn {
+  width: 138px;
+  height: 33px;
+  margin-left: 5px;
+  border-radius: 8px;
+  background-color: #605BFF;
+  color: white;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .dashboard-menu-down-logo-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .dashboard-menu-down-logo-profile .dashboard-menu-down-logo-profile-img {
+  width: 45px;
+  height: 43px;
+  background: pink;
+  border-radius: 12px;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .dashboard-menu-down-logo-profile .dashboard-menu-down-logo-profile-name {
+  width: 67px;
+  height: 16px;
+  margin-left: -10px;
+  margin-top: 10px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.dashboard .menu .dashboard-menu-down-logo .dashboard-menu-down-logo-profile .dashboard-menu-down-logo-profile-logout {
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.dashboard .dashboard-function {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-grid-rows: 9rem 12rem 40.5rem 40.5rem;
+      grid-template-rows: 9rem 12rem 40.5rem 40.5rem;
+}
+
+.dashboard .dashboard-function .dashboard-function-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 30px;
+}
+
+.dashboard .dashboard-function .dashboard-function-header .dashboard-function-header-text {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #030229;
+}
+
+.dashboard .dashboard-function .dashboard-function-header .dashboard-function-header-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.dashboard .dashboard-function .dashboard-function-header .dashboard-function-header-date .dashboard-function-header-date-06 {
+  width: 100px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030229;
+  opacity: 0.7;
+}
+
+.dashboard .dashboard-function .dashboard-function-header .dashboard-function-header-date .dashboard-function-header-date-10 {
+  width: 100px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-right: 20px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030229;
+  opacity: 0.7;
+}
+
+.dashboard .dashboard-function .dashboard-function-products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .dashboard-function .dashboard-function-products .dashboard-function-products-elem {
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 20%;
+  border-radius: .5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .dashboard-function .dashboard-function-products .dashboard-function-products-elem .dashboard-function-products-elem-icon {
+  margin: 25px;
+  margin-right: 20px;
+}
+
+.dashboard .dashboard-function .dashboard-function-products .dashboard-function-products-elem .dashboard-function-products-elem-text {
+  margin-top: 28px;
+}
+
+.dashboard .dashboard-function .dashboard-function-products .dashboard-function-products-elem .dashboard-function-products-elem-text .dashboard-function-products-elem-text-p1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 30px;
+  color: #000000;
+  opacity: 0.7;
+}
+
+.dashboard .dashboard-function .dashboard-function-products .dashboard-function-products-elem .dashboard-function-products-elem-text .dashboard-function-products-elem-text-p2 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  color: #030229;
+  opacity: 0.7;
+}
+
+.dashboard .dashboard-function .dashboard-function-report {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.dashboard .dashboard-function .dashboard-function-report .dashboard-function-report-elem {
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 49%;
+  border-radius: .5rem;
+  margin-top: 2rem;
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 20px;
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem1 svg {
+  background: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem1 svg g:nth-child(4) {
+  background: linear-gradient(89.96deg, rgba(94, 195, 255, 0.04) -0.98%, rgba(253, 93, 239, 0.04) 100%);
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem1 svg g:nth-child(4) path {
+  stroke-width: 5;
+  stroke: #fd5def;
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem2 svg {
+  background: #FAFAFB;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+}
+
+.dashboard .dashboard-function .dashboard-function-report #dashboard-function-report-elem2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders .dashboard-function-orders-elem {
+  -webkit-box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 1rem rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  width: 49%;
+  border-radius: .5rem;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 20px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-h1 {
+  margin: 20px;
+  margin-left: 85px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-h1 h1 {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+  /* Text */
+  color: #030229;
+  opacity: 0.7;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows .dashboard-function-orders-elem-headers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows .dashboard-function-orders-elem-headers p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* Text */
+  color: #030229;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows .dashboard-function-orders-elem-cols {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  /* Text */
+  color: #030229;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows #dashboard-function-orders-elem-cols {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows .dashboard-function-orders-elem-cols-green-border {
+  width: 61px;
+  height: 30px;
+  background: #26C0E2;
+  border-radius: 8px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem1 .dashboard-function-orders-elem-rows .dashboard-function-orders-elem-cols-green-border P {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  /* badge */
+  opacity: 0.9;
+  color: black;
+  padding-top: 6px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem2 .dashboard-function-orders-elem-img {
+  margin: 20px;
+}
+
+.dashboard .dashboard-function .dashboard-function-orders #dashboard-function-orders-elem2 .dashboard-function-orders-elem-header {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+  margin: 10px;
+  opacity: 0.7;
+}
+/*# sourceMappingURL=main.css.map */

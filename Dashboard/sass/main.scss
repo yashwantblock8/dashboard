@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$div_bg : #FFFFFF;
+$bg_color:#FAFAFB;
+$menu-text:#030229;
+$box-shadow: 0 2px 1rem rgba(0,0,0,.2);
+
+// @mixin border {
+//     border: 2px solid black;
+    
+// }
+@mixin flex{
+    
+    display: flex;
+    justify-content: space-between;
+} 
+@mixin elem-deign($width) {
+    background-color: $div_bg;
+    color: black;
+    font-size: 2rem;
+    font-weight: 500;
+    width: $width;
+    border-radius: .5rem;
+}
+@mixin date-style {
+    width: 100px;
+    height: 20px;
+
+    background: #ffffff;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #030229;
+
+    opacity: 0.7; 
+    
+}
+    
+
+body{
+    background-color: $bg_color;
+    font-family: 'Nunito Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.dashboard{
+    display: grid;
+    grid-template-rows: 102rem;
+    grid-template-columns: 22rem auto;
+    
+    grid-gap: 2rem;
+    & .menu{
+        background-color: $div_bg;
+        // @include border();
+        
+        
+        & .logo-company {
+            display: flex;
+        }
+        & .dashboard-menu{
+            @include flex();
+            flex-direction: column;
+            text-align: left;
+            
+            
+            & .dashboard-menu-submenu{
+                
+                
+                & .dashboard-menu-submenu-elem{
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    & .dashboard-menu-submenu-elem-a{
+                        display: flex;
+                        color: $menu-text;
+                        text-decoration: none;
+                    }
+                    
+                    
+                }
+                
+                
+            }
+        }
+        & .dashboard-menu-down-logo{
+            margin-top: 270px;
+
+            & .dashboard-menu-down-logo-rectangle{
+                width: 168px;
+                height: 161px;
+                margin-left: 25px;
+
+                background: #80ABFF;
+                opacity: 0.1;
+                border-radius: 20px;
+                
+            }
+            & .image-object{
+                margin-top: -160px;
+                margin-left: 30px;
+                & .image-object-rect{
+                    width: 110px;
+                    height: 43px;
+                    margin-left: 20px;
+                    margin-top: -34px;
+
+                    background: linear-gradient(10deg, rgba(126, 170, 255, 0.29) 0%, rgba(196, 196, 196, 0) 100%);
+                }
+                & .btn{
+                    width: 138px;
+                    height: 33px;
+                    margin-left: 5px;
+                    border-radius: 8px;
+                    background-color: #605BFF;
+                    color: white;
+                }
+
+            }
+            & .dashboard-menu-down-logo-profile{
+                @include flex;
+                justify-content: space-evenly;
+                margin-left: 20px;
+                margin-top: 20px;
+                & .dashboard-menu-down-logo-profile-img{
+                    width: 45px;
+                    height: 43px;
+
+                    background: pink;
+                    border-radius: 12px;
+                    
+                }
+                & .dashboard-menu-down-logo-profile-name{
+                    width: 67px;
+                    height: 16px;
+                    margin-left: -10px;
+                    margin-top: 10px;
+
+                    font-family: Nunito;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+
+                    color: #000000;
+                }
+                & .dashboard-menu-down-logo-profile-logout{
+                    opacity: 0.5;
+                    margin-top: 10px;
+
+                }
+            }
+            
+            
+        }
+        
+    }
+    & .dashboard-function{
+        // @include border();
+        display: grid;
+        box-sizing: border-box;
+        grid-template-rows: 9rem 12rem 40.5rem 40.5rem;
+        & .dashboard-function-header{
+            @include flex();
+            box-sizing: border-box;
+            margin-top: 30px;
+            & .dashboard-function-header-text{
+                font-family: Nunito;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 33px;
+
+                color: #030229;
+            }
+            & .dashboard-function-header-date{
+                @include flex();
+                box-sizing: border-box;
+                & .dashboard-function-header-date-06{
+                    @include date-style;
+                    
+                    
+                   
+                }
+                & .dashboard-function-header-date-10{
+                    @include date-style;
+                }
+                
+
+            }
+            
+
+        }
+        & .dashboard-function-products{
+            // @include border();
+            @include flex();
+            & .dashboard-function-products-elem{
+                // @include border();
+                @include elem-deign(20%);
+                display: inline-flex;
+                box-shadow: $box-shadow;
+                & .dashboard-function-products-elem-icon{
+                    margin: 25px;
+                    margin-right: 20px;
+                }
+                & .dashboard-function-products-elem-text{
+                    margin-top: 28px;
+                    & .dashboard-function-products-elem-text-p1{
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 22px;
+                        line-height: 30px;
+
+
+                        color: #000000;
+
+                        opacity: 0.7;
+                    }
+                    & .dashboard-function-products-elem-text-p2{
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 19px;
+
+                        color: #030229;
+
+                        opacity: 0.7;
+
+                    }
+                }
+
+            }
+
+        }
+        & .dashboard-function-report{
+            // @include border();
+            @include flex();
+            & .dashboard-function-report-elem{
+                // @include border();
+                @include elem-deign(49%);
+                margin-top: 2rem;
+                
+
+
+            }
+            & #dashboard-function-report-elem1{
+                flex: 2;
+                margin-right: 20px;
+            }
+            & #dashboard-function-report-elem1 svg{
+                background: $div_bg;
+                border-radius:10px;
+                
+                box-shadow: 0 2px 1rem rgba(0,0,0,.2);
+                g:nth-child(4) {
+                    background: linear-gradient(89.96deg, rgba(94, 195, 255, 0.04) -0.98%, rgba(253, 93, 239, 0.04) 100%);
+                  path {
+                    stroke-width: 5;
+                    stroke:#fd5def;
+                  }
+                }
+            }
+            & #dashboard-function-report-elem2 svg{
+                background: $bg_color;
+                border-radius:10px;
+                
+                box-shadow: 0 2px 1rem rgba(0,0,0,.2);
+                
+            }
+            
+                
+            & #dashboard-function-report-elem2{
+                flex: 1;
+                
+            }
+
+        }
+        & .dashboard-function-orders{
+            // @include border();
+            @include flex();
+            margin-top: 2rem;
+            & .dashboard-function-orders-elem{
+                box-shadow: $box-shadow;
+                // @include border();
+                @include elem-deign(49%);
+
+            }
+            & #dashboard-function-orders-elem1{
+                flex: 2;
+                margin-right: 20px;
+
+
+                & .dashboard-function-orders-elem-h1{
+                    margin: 20px;
+                    margin-left: 85px;
+                    & h1{
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 25px;
+                        /* identical to box height */
+
+
+                        /* Text */
+
+                        color: #030229;
+
+                        opacity: 0.7;
+                    }
+                }
+
+                & .dashboard-function-orders-elem-rows{
+                    display: flex;
+                    justify-content: space-evenly;
+                    margin-top: 20px;
+                    & .dashboard-function-orders-elem-headers{
+                        display: flex;
+                        & p{
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 12px;
+                            line-height: 16px;
+                            
+                            /* Text */
+                            
+                            color: #030229;
+                        }
+                    }
+                    & .dashboard-function-orders-elem-cols{
+                        font-family: Nunito;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 16px;
+
+                        /* Text */
+
+                        color: #030229;
+
+                    }
+                    & #dashboard-function-orders-elem-cols{
+                        display: inline-flex;
+                    }
+                    & .dashboard-function-orders-elem-cols-green-border{
+                        width: 61px;
+                        height: 30px;
+
+                        background: #26C0E2;
+                        border-radius: 8px;
+                        & P{
+                            
+                            font-family: Nunito;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 12px;
+                            line-height: 16px;
+                            text-align: center;
+
+                            /* badge */
+                            opacity: 0.9;
+
+                            color: black;
+                            padding-top: 6px;
+                        }
+                    }
+                }
+                
+            }
+            & #dashboard-function-orders-elem2{
+                flex: 1;
+                & .dashboard-function-orders-elem-img{
+                    margin: 20px;
+                }
+                & .dashboard-function-orders-elem-header{
+                    font-family: Nunito;
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: #000000;
+                    margin: 10px;
+
+                    opacity: 0.7;
+                }
+            }
+
+        }
+
+        
+    }
+}
